@@ -1,0 +1,224 @@
+    ¡Bienvenidos a Graciela's!
+            En Graciela's, el desayuno no es solo una comida, ¡es una experiencia! Desde el momento en que cruces nuestras puertas, te recibirán los aromas tentadores de café recién molido, pan
+            ecillos horneados al momento y platillos preparados con los ingredientes más frescos y de la más alta calidad. Nuestro acogedor restaurante, decorado con un toque rústico y detalles 
+            modernos, es el lugar perfecto para empezar tu día con buen pie.
+                
+            Ya sea que vengas a disfrutar de un clásico desayuno americano, unos exquisitos chilaquiles, o nuestra especialidad de la casa, los pancakes Graciela's, 
+            te prometemos una experiencia culinaria que despertará todos tus sentidos. Además, nuestro amable y atento equipo está siempre listo para hacer de tu visita algo especial, asegurándose de que te sientas como en casa.
+            En Graciela's, cada desayuno se convierte en una ocasión memorable. Ven y descubre por qué somos el lugar favorito para los amantes del desayuno en la ciudad.
+            ¡Te esperamos con los brazos abiertos y una taza de café humeante!
+            Graciela's, donde el buen comer comienza cada mañana.
+            <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservacion.css">
+    <script src="reservacion.js"></script>
+    <title>Reservación</title>
+</head>
+<body>
+    <div class="parent">
+	<header>
+		<div class="logo">
+			<a href="principal.html"><img src="logoG.png" width="80px"></a>
+		</div>
+        <div class="div11" id="reloj"></div> 
+            <script>
+                fechaTR();
+                setInterval(fechaTR, 1000);
+            </script>
+	</header>
+    </div>
+    <h1 id="title">Reservación de Mesa</h1>
+    <form action="rese.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required><br><br>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="10 digitos" required><br><br>
+        
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+        
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required><br><br>
+        
+        <label for="personas">Número de Personas:</label>
+        <input type="number" id="personas" name="personas" min="1" max="10" required placeholder="10 máximo"><br><br>
+        
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Enviar Reservación">
+    </form>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservación</title>
+    <link rel="stylesheet" href="reservacion.css">
+    <script src="reservacion.js"></script>
+</head>
+<body>
+    <div class="parent">
+        <header>
+            <div class="logo">
+                <a href="principal.html"><img src="logoG.png" width="80px"></a>
+            </div>
+            <div class="div11" id="reloj"></div> 
+                <script>
+                    fechaTR();
+                    setInterval(fechaTR, 1000);
+                </script>
+        </header>
+        </div>
+    
+    <div class="container">
+        <div class="dropdown">
+            <label for="view-options">Ver Reservaciones:</label>
+            <select id="view-options" onchange="toggleForm(this.value)">
+                <option value="">Seleccione una opción</option>
+                <option value="today">Hoy</option>
+                <option value="week">Esta Semana</option>
+                <option value="month">Este Mes</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <label for="create-options">Crear Reservación:</label>
+            <select id="create-options" onchange="toggleForm(this.value)">
+                <option value="">Seleccione una opción</option>
+                <option value="create">Nueva Reservación</option>
+                <option value="modify">Modificar Reservación</option>
+                <option value="cancel">Cancelar Reservación</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-container" id="form-container">
+        <h1 id="title">Reservación de Mesa</h1>
+        <form action="rese.php" method="post" id="reservation-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required><br><br>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" required><br><br>
+            
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+            
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required><br><br>
+            
+            <label for="personas">Número de Personas:</label>
+            <input type="number" id="personas" name="personas" min="1" max="10" required placeholder="Máximo 10"><br><br>
+            
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+            
+            <input type="submit" value="Enviar Reservación">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservación</title>
+    <link rel="stylesheet" href="reservacion.css">
+    <script src="reservacion.js"></script>
+</head>
+<body>
+    <div class="parent">
+        <header>
+            <div class="logo">
+                <a href="principal.html"><img src="logoG.png" width="80px"></a>
+            </div>
+            <div class="div11" id="reloj"></div> 
+                <script>
+                    fechaTR();
+                    setInterval(fechaTR, 1000);
+                </script>
+        </header>
+    </div>
+    
+    <div class="container">
+        <div class="dropdown">
+            <form action="verRese.php" method="get">
+                <button type="submit" class="button">Ver Reservaciones</button>
+            </form>
+        </div>
+        <div class="dropdown">
+            <button class="button" onclick="location.href='crearRese.php';">Crear Reservación</button>
+            <button class="button" onclick="mostrarFormularioEliminar();">Eliminar Reservación</button>
+        </div>
+    </div>
+
+    <div class="form-container" id="form-container">
+        <h1 id="title">Reservación de Mesa</h1>
+        <form action="crearRese.php" method="post" id="reservation-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required><br><br>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" required><br><br>
+            
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+            
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required><br><br>
+            
+            <label for="personas">Número de Personas:</label>
+            <input type="number" id="personas" name="personas" min="1" max="10" required placeholder="Máximo 10"><br><br>
+            
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+            
+            <input type="submit" value="Enviar Reservación">
+        </form>
+    </div>
+
+    <!-- Formulario para eliminar reservación -->
+    <div class="eliminar-reservacion" id="eliminar-reservacion-form" style="display: none;">
+        <h2>Eliminar Reservación</h2>
+        <form action="eliminarRese.php" method="post">
+            <label for="nombre_cliente">Nombre del Cliente:</label>
+            <input type="text" id="nombre_cliente" name="nombre_cliente" required><br><br>
+            
+            <label for="fecha_reservacion">Fecha de la Reservación:</label>
+            <input type="date" id="fecha_reservacion" name="fecha_reservacion" required><br><br>
+            
+            <input type="submit" value="Eliminar Reservación">
+        </form>
+    </div>
+
+    <script>
+        function mostrarFormularioEliminar() {
+            var formEliminar = document.getElementById('eliminar-reservacion-form');
+            formEliminar.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

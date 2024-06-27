@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pagina principal</title>
+    <script src="principal.js"></script>
+    <link rel="stylesheet" href="principal.css">
+    <link rel="icon" href="logoG.png">
+</head>
+<body>
+        
+    <div class="parent">
+        <header>
+            
+            <div class="logo">
+                <a href="principal.html"><img src="logoG.png" width="80px"></a>
+            </div>
+            <div class="links">  
+            <nav class="nav">
+                <a href="#1">Ubicación</a>
+            
+                <a href="#2">Redes sociales</a>
+                
+                <a href="#3">Horario</a>
+            </nav>
+        </div>
+           
+            <div class="div11" id="reloj"></div> 
+            <script>
+                fechaTR();
+                setInterval(fechaTR, 1000);
+            </script>
+        </header>
+
+        <div class="titulo">
+           <p>RESTAURANTE</p>
+            <h1>GRACIELA'S</h1>
+            <p>EN HACIENDA SAN ISIDRO</p>
+        </div>
+
+        <div class="bienvenida">
+            <div class="text">
+                <p>
+                    ¡Bienvenidos a Graciela's!<br>
+                    En Graciela's, el desayuno no es solo una comida, ¡es una experiencia! Desde el momento en que cruces nuestras puertas, te recibirán
+                     los aromas tentadores de café recién molido, pan
+                    ecillos horneados al momento y platillos preparados con los ingredientes más frescos y de la más alta calidad. Nuestro acogedor restaurante,
+                     decorado con un toque rústico y detalles 
+                    modernos, es el lugar perfecto para empezar tu día con buen pie.
+                </p>
+                
+            </div>
+            <div class="image">
+                <img src="img1.png">
+
+            
+            </div>
+        </div>
+
+        <div class="extra">
+            <div class="text">
+                <p>
+                    Ya sea que vengas a disfrutar de un clásico desayuno americano, unos exquisitos chilaquiles, o nuestra especialidad de la casa, los pancakes Graciela's, 
+                    te prometemos una experiencia culinaria que despertará todos tus sentidos. Además, nuestro amable y atento equipo está siempre listo para hacer de tu visita algo especial, asegurándose de que te sientas como en casa.
+                    En Graciela's, cada desayuno se convierte en una ocasión memorable. Ven y descubre por qué somos el lugar favorito para los amantes del desayuno en la ciudad.
+                    ¡Te esperamos con los brazos abiertos y una taza de café humeante!
+                </p>
+            </div>
+            <div class="image">
+                <img src="img2.png">
+            </div>
+        </div>
+
+
+        <div class="divSeleccion">
+            <form action="menu.html">
+                <button class="seleccion" id="menu">Menu</button>
+            </form>
+            <form action="rese.html">
+                <button id="reservacion" class="seleccion">Reservación</button>
+            </form>
+        </div>
+    </div>
+    <div class="contenido">
+        <h2  id="1" onclick="mostrarUbi()">Ubicación</h2><br>
+        <p id="pUbi">
+            
+        </p>
+        <br><br>
+        <h2 id="2" onclick="mostrarRS()">Redes sociales</h2><br>
+        <p id="redes">   
+        </p>
+        <br><br>
+        <h2 id="3" onclick="mostrarH()">Horario</h2>
+        <p id="horario">
+        </p>
+    </div>
+    <div class="bottom">
+        <p>Donde el buen comer comienza cada mañana.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+header{   
+    
+    background-color: #556B2F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin: 18px;
+}
+.div11{
+    color: aliceblue;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Tipo de letra */
+    margin-right: 15px;
+   }
+.parent 
+{
+   display: flex;
+   flex-direction: column;
+    background-color: #f1f1f0;
+    font-size: x-large;
+}
+/* Estilos para el contenido principal */
+.main-content {
+    margin-top: 80px; /* Ajusta la separación entre el header y el contenido principal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea {
+    width: calc(100% - 20px); /* Ajusta el ancho con el espacio para el borde */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px; /* Margen general alrededor de la página */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+    margin: 20px auto; /* Centra el contenedor y ajusta los márgenes */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.dropdown {
+    margin-right: 20px; /* Margen entre los menús desplegables */
+}
+
+.form-container {
+    width: 100%; /* Ancho completo del formulario */
+    margin-top: 30px; /* Espacio arriba del formulario */
+    display: none; /* Oculta el formulario por defecto */
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Estilo para el hipervínculo de "Ver Reservaciones" 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre los elementos */
+
+.dropdown {
+    margin: 0 10px; /* Espacio entre los dropdowns */
+}
+
+.dropdown select {
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.dropdown select:hover {
+    border-color: #007bff;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+    font-size: 16px;
+    border: none;
+    border-radius: 20px; /* Hace que el botón sea redondeado */
+    background-color: #fff;
+    color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilo para el select de "Crear Reservación" */
+.dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.dropdown select:hover {
+    border-color: #007bff;
+}

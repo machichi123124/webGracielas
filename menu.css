@@ -1,0 +1,97 @@
+@font-face {
+    font-family: title;
+    src: url(WidieGusti-eZRMB.otf);
+}
+@font-face {
+    font-family: font1;
+    src: url(PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+.parent 
+{
+   display: flex;
+   flex-direction: column;
+    background-color: #f1f1f0;
+    font-size: x-large;
+}.div11{
+    color: aliceblue;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Tipo de letra */
+   }
+   header{   
+    
+    background-color: #556B2F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo{
+    font-family: font1;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+}
+
+.seccion {
+    margin-bottom: 30px;
+    padding: 20px 20px;
+}
+
+.titulo-seccion {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 20px 20px;
+}
+
+.item-menu {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row; /* Alineación horizontal */
+    justify-content: space-between; /* Espacio entre texto e imagen */
+    align-items: flex-start; /* Alinear elementos al inicio */
+    padding: 20px 20px;
+}
+
+.nombre-item {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    padding: 20px 20px;
+    font-family: font1;
+}
+
+.precio-item {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.descripcion-item {
+    color: #777;
+    font-family: font1;
+    font-size: 120%;
+}
+
+/* Estilo para imágenes */
+.imagen {
+    max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+    margin-left: 20px; /* Espacio entre texto e imagen */
+}
+
+.imagen img {
+    width: 100%; /* Asegura que la imagen no exceda el ancho máximo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Borde redondeado para la imagen */
+}

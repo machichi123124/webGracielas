@@ -1,0 +1,170 @@
+@font-face {
+    font-family: title;
+    src: url(WidieGusti-eZRMB.otf);
+}
+@font-face {
+    font-family: font1;
+    src: url(PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+.parent 
+{
+   display: flex;
+   flex-direction: column;
+    background-color: #f1f1f0;
+    font-size: x-large;
+}
+.div11{
+ color: aliceblue;
+ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Tipo de letra */
+ 
+}
+.bottom{
+    background-color: #556B2F;
+    padding: 10px;
+    text-align: center;
+    font-size: 200%;
+    font-family: title;
+}
+header{   
+    
+    background-color: #556B2F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo { 
+        background-image: url(baner.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: font1;
+        color: black;
+}
+.titulo p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.titulo h1{
+    font-size: 60px;
+}
+.bienvenida{
+    display: flex;
+    align-items: flex-start;
+}
+.text {
+    flex: 1;
+    text-align: justify;
+    padding-right: 20px;
+    margin-left: 8%;
+    margin-top: 8%;
+}
+.image {
+    max-width: 500px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 8%;
+}
+.image img {
+    width: 100%; /* Asegura que la imagen no exceda el ancho máximo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 20%;
+}
+
+img{
+    margin: 10%;
+    border-color: #000;
+    border: 100x;
+}
+/* Estilo para el contenedor de texto extra */
+.extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Espacio entre bloques */
+}
+
+/* Estilo para el bloque de texto en los textos extras */
+.extra .text {
+    flex: 1; /* Que ocupe el espacio restante */
+    text-align: justify;
+    padding-left: 20px; /* Espacio a la izquierda del texto */
+    margin-bottom: auto;
+}
+
+/* Estilo para el bloque de imagen en los textos extras */
+.extra .image {
+    width: 500px; /* Ancho fijo para la imagen */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+    order: -1; /* Cambia el orden para que la imagen aparezca antes del texto */
+}
+
+/* Estilo para la imagen dentro de los textos extras */
+.extra .image img {
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 20%; /* Borde redondeado */
+}
+
+a{
+    margin-right: 20px;
+    
+  
+}
+.divSeleccion
+{ 
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin-top: 20px;
+}
+.seleccion{
+    background-color: #556B2F; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 15px 30px; /* Aumenta el tamaño del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Como elemento en línea */
+    font-size: 18px; /* Tamaño de fuente */
+    margin: 35px; /* Márgenes */
+    cursor: pointer; /* Cursor */
+    border-radius: 10px; /* Borde redondeado menos pronunciado */
+    transition: all 0.3s ease; /* Transición suave */
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f0;
+    font-family: 'fuente2';
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    padding : 8%;
+    font-size: 140%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Ajusta el tamaño y el color del resplandor */
+}
+h2:hover{
+    scale: 1.2;
+    cursor: pointer;
+    font-weight: bold;
+}
+.seleccion:hover{
+scale: 1.5;
+font-weight: bold;
+cursor: pointer;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el cursor */
+}
+#pUbi {
+    margin-top: 20px; /* Espacio superior */
+    text-align: center; /* Centrar contenido */
+    width: 100%; /* Ancho completo del contenedor */
+}
+.links a{
+    color: #000;
+}
